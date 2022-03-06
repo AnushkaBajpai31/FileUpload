@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Mini Upload Project</title>
+  </head>
+  <body>
+    <h3 class="align-center text-css">Hello World</h3>
+    <h2 class="align-center text-css">Welcome to my Mini Upload Project</h2>
+    <div class="grid-container">
+
+      <div class="grid-item1">
+        <div class="align-mid">
+          <label>Choose files to Upload</label>
+          <br><br>
+          <form enctype="multipart/form-data">
+            <input type="file" name="file" multiple="multiple" (change)="this.handleFileInput($event)">
+            <br><br>
+            <button (click)="this.submit()"><i [ngClass]="this.isUpload?'fa fa-spinner fa-spin':'fa fa-upload'"></i>Upload</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="grid-item2">
+        <div class="align-grid-text">
+          <h3> Steps to create File Upload Project (using Angular 2+ and Flask)</h3>
+          <p>1. Create a new project in Angular using 'ng new project-name'.</p>
+          <p>2. Create a basic HTML file with an 'input' tag of type 'file' in 'form' tag.</p>
+          <p>3. Create a method to store all files in a list after choosing files.</p>
+          <p>4. Create a new project in Flask.</p>
+          <p>5. Start by creating 'app.py'.</p>
+          <p>6. Create an endpoint of upload API which will upload files.</p>
+          <p>7. Create a service in Angular project.</p>
+          <p>8. Add function to call upload API.</p>
+          <p>9. Create a method to upload files on submit.</p>
+          <p>10. Call the upload API method of the upload service while calling submit method.</p>
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <footer class="footer-css">
+    Created by Anushka Bajpai
+  </footer>
+</html>
