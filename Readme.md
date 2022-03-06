@@ -1,5 +1,7 @@
 This project is created by Anushka Bajpai
 
+Simple system to upload multiple files.
+
 # Here is how you can use and run this project
 1. Frontend code folder: file-upload
 2. Backend code folder: backend
